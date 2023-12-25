@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/speciesItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp"
+    android:theme="@style/Theme.MaterialComponents.DayNight"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/cardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pokemonId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"/>
+
+        <TextView
+            android:id="@+id/pokemonSpeciesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"/>
+
+        <TextView
+            android:id="@+id/pokemonGenus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="genus"/>
+
+        <TextView
+            android:id="@+id/pokemonSpeciesCaptureRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="capture rate"/>
+
+        <TextView
+            android:id="@+id/pokemonsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pokemons name"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

@@ -1,0 +1,34 @@
+query PokemonSpecies($searchTerm: String!, $limit: Int, $offset: Int) {
+    pokemon_v2_pokemonspeciesname(
+        limit: $limit,
+        offset: $offset,
+        where: { name: { _ilike: $searchTerm } }
+    ) {
+        id
+        name
+        genus
+        language_id
+        # Include other fields from pokemon_v2_pokemonspeciesname as needed
+
+        # Fetch related information from pokemon_v2_pokemonspecies
+        pokemon_v2_pokemonspecy {
+            id
+            name
+            capture_rate
+            pokemon_v2_pokemoncolor {
+                id
+                name
+            }
+            pokemon_v2_pokemons {
+                id
+                name
+                pokemon_v2_pokemonabilities{
+                    id
+                    pokemon_v2_ability {
+                        name
+                    }
+                }
+            }
+        }
+    }
+}
