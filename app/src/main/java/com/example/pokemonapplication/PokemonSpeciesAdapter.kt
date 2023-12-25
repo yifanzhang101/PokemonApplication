@@ -109,5 +109,4 @@ class PokemonSpeciesAdapter: RecyclerView.Adapter<PokemonSpeciesAdapter.ViewHold
         val species = speciesNameList[position]
         holder.bindItems(species)
     }
-
 }

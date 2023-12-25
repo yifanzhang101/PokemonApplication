@@ -31,5 +31,4 @@ object Repository {
             _isLoading.value = false
         }
     }
-
 }
